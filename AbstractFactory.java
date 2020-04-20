@@ -63,8 +63,7 @@ abstract class AbstractFactory {
     private static final HumanToolkit HUMAN_TOOLKIT = new HumanToolkit();
     private static final GoblinToolkit GOBLIN_TOOLKIT = new GoblinToolkit();
 
-    // Returns a concrete factory object that is an instance of the
-    // concrete factory class appropriate for the given architecture.
+    
     static AbstractFactory getFactory(Architecture architecture) {
         AbstractFactory factory = null;
         switch (architecture) {
